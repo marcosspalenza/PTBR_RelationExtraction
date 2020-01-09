@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>NLP Docker : RelEx</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>       
+<div class="container">
+    <h1>Extração de Relações em Português</h1>
+    <p><b>Extração de Relações</b> é uma tarefa em <b>Processamento de Linguagem Natural</b> para extrair relações semânticas a partir de texto. Essas relações geralmente ocorrem entre duas ou mais entidades (por exemplo: Pessoa, Organização, Local), o que diretamente associa este estudo ao de <b>Reconhecimento de Entidades Nomeadas</b>.</p>
+    <hr />
+    <div class="form-group">
+    </div>
+    <form action="/output" method="POST">
+        <input class="form-control" name="sentence" id="sentence" placeholder="Envie uma frase." type="text" autocomplete="off" required/>
+        <br>
+        <button type="submit" class="btn btn-primary" name="action">Enviar</button>
+    </form>
+    <br>
+    <div class="alert alert-primary" role="alert">
+    <ul>
+        <li>Docker : Container Ubuntu 18.04</li>
+        <li>Python 3.7</li>
+        <li>Libraries:</li>
+        <ul>
+            <li>Flask 1.0</li>
+            <li>Graphviz 1.0</li>
+            <li>Spacy 1.0</li>
+        </ul>
+    </ul>
+    </div>
+</div>
+</body>
+</html>
