@@ -1,2 +1,2 @@
 # docker_RelEx
- Portuguese Relation Extration with SpaCy
+ Portuguese Relation Extraction with SpaCy
