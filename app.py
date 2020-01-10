@@ -12,15 +12,14 @@ app = Flask(__name__)
 def index():
     # open the index.html page
     for filename in os.listdir("static/"):
-        if ".png" in filename:
-            os.remove("static/"+filename)
+        os.remove("static/"+filename)
     return render_template('index.html')
 
 # when the result url hit with a post request, show result function
 @app.route('/output', methods=['POST'])
 def result():
     sentence = request.form['sentence'] # receive the user input
-    nlp = spacy.load("pt")
+    nlp = spacy.load("pt_core_news_sm")
     doc = nlp(sentence)
     graph = Digraph('G', filename='sentence.gv', format='png', node_attr={'shape': 'plaintext'})
     triplets = []
@@ -92,4 +91,4 @@ def result():
 
 
 if __name__ == "__main__":
-    app.run(debug=False,host='0.0.0.0')
+    app.run(host='0.0.0.0')
