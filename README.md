@@ -2,7 +2,7 @@
 
 Simple Flask service for Portuguese Natural Language Processing to analyze sentence dependencies and extract relations using SpaCy.
 
-## Requisites: 
+## Requirements: 
 Docker Container Ubuntu 18.04
 
 - Python 3.6
