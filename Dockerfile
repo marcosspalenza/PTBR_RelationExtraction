@@ -18,6 +18,8 @@ WORKDIR /app
 
 COPY . /app
 
+RUN mkdir -p /app/static/
+
 ENTRYPOINT [ "python3" ]
 
 CMD [ "app.py" ]
