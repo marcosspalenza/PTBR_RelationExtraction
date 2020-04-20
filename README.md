@@ -24,7 +24,7 @@ docker build -t nlp_relex .
 
 Clone via DockerHub:
 ```
-docker push marcosspalenza/nlp_relex:lattest
+docker pull marcosspalenza/nlp_relex
 ```
 
 Start and access the container IP. The service will be runing on localhost port 5000.
